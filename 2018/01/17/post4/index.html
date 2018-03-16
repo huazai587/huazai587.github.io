@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Vue," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,18 +79,17 @@
 
 
 
-<meta name="description" content="1 什么是mvvm? MVVM是Model-View-ViewModel的缩写。mvvm是一种设计思想。Model 层代表数据模型，也可以在Model中定义数据修改和操作的业务逻辑；View 代表UI 组件，它负责将数据模型转化成UI 展现出来，ViewModel 是一个同步View 和 Model的对象。 在MVVM架构下，View 和 Model 之间并没有直接的联系，而是通过ViewMode">
-<meta name="keywords" content="Vue">
+<meta name="description" content="上篇文章我们主要介绍了ES6的6个主要特性，本文将继续学习第二部分的两个特性Promise和模块导入导出，并且在最后还给大家介绍如何使用Babel工具将ES6代码转换成ES5格式代码。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="VUE常见面试题目">
-<meta property="og:url" content="http://yoursite.com/2018/03/06/page/index.html">
+<meta property="og:title" content="ES6核心（下）">
+<meta property="og:url" content="http://yoursite.com/2018/01/17/post4/index.html">
 <meta property="og:site_name" content="huazai&#39;s  Blog">
-<meta property="og:description" content="1 什么是mvvm? MVVM是Model-View-ViewModel的缩写。mvvm是一种设计思想。Model 层代表数据模型，也可以在Model中定义数据修改和操作的业务逻辑；View 代表UI 组件，它负责将数据模型转化成UI 展现出来，ViewModel 是一个同步View 和 Model的对象。 在MVVM架构下，View 和 Model 之间并没有直接的联系，而是通过ViewMode">
+<meta property="og:description" content="上篇文章我们主要介绍了ES6的6个主要特性，本文将继续学习第二部分的两个特性Promise和模块导入导出，并且在最后还给大家介绍如何使用Babel工具将ES6代码转换成ES5格式代码。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-03-09T09:44:55.457Z">
+<meta property="og:updated_time" content="2018-03-16T08:29:37.237Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="VUE常见面试题目">
-<meta name="twitter:description" content="1 什么是mvvm? MVVM是Model-View-ViewModel的缩写。mvvm是一种设计思想。Model 层代表数据模型，也可以在Model中定义数据修改和操作的业务逻辑；View 代表UI 组件，它负责将数据模型转化成UI 展现出来，ViewModel 是一个同步View 和 Model的对象。 在MVVM架构下，View 和 Model 之间并没有直接的联系，而是通过ViewMode">
+<meta name="twitter:title" content="ES6核心（下）">
+<meta name="twitter:description" content="上篇文章我们主要介绍了ES6的6个主要特性，本文将继续学习第二部分的两个特性Promise和模块导入导出，并且在最后还给大家介绍如何使用Babel工具将ES6代码转换成ES5格式代码。">
 
 
 
@@ -120,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/03/06/page/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/01/17/post4/"/>
 
 
 
 
 
-  <title>VUE常见面试题目 | huazai's  Blog</title>
+  <title>ES6核心（下） | huazai's  Blog</title>
   
 
 
@@ -263,7 +262,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/06/page/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/01/17/post4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="huazai587">
@@ -280,7 +279,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">VUE常见面试题目</h1>
+          <h1 class="post-title" itemprop="name headline">ES6核心（下）</h1>
         
 
         <div class="post-meta">
@@ -292,8 +291,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-06T13:37:02+08:00">
-                2018-03-06
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-17T10:55:14+08:00">
+                2018-01-17
               </time>
             
 
@@ -303,28 +302,6 @@
           </span>
 
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端知识/" itemprop="url" rel="index">
-                    <span itemprop="name">前端知识</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
 
           
             
@@ -333,9 +310,9 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/03/06/page/#comments" itemprop="discussionUrl">
+                <a href="/2018/01/17/post4/#comments" itemprop="discussionUrl">
                   <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/03/06/page/" itemprop="commentCount"></span>
+                        data-disqus-identifier="2018/01/17/post4/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -343,7 +320,7 @@
 
           
           
-             <span id="/2018/03/06/page/" class="leancloud_visitors" data-flag-title="VUE常见面试题目">
+             <span id="/2018/01/17/post4/" class="leancloud_visitors" data-flag-title="ES6核心（下）">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -374,25 +351,28 @@
       
 
       
-        <h2 id="1-什么是mvvm"><a href="#1-什么是mvvm" class="headerlink" title="1 什么是mvvm?"></a>1 什么是mvvm?</h2><ol>
-<li>MVVM是Model-View-ViewModel的缩写。mvvm是一种设计思想。Model 层代表数据模型，也可以在Model中定义数据修改和操作的业务逻辑；View 代表UI 组件，它负责将数据模型转化成UI 展现出来，ViewModel 是一个同步View 和 Model的对象。</li>
-<li>在MVVM架构下，View 和 Model 之间并没有直接的联系，而是通过ViewModel进行交互，Model 和 ViewModel 之间的交互是双向的， 因此View 数据的变化会同步到Model中，而Model 数据的变化也会立即反应到View 上。</li>
-<li>ViewModel 通过双向数据绑定把 View 层和 Model 层连接了起来，而View 和 Model 之间的同步工作完全是自动的，无需人为干涉，因此开发者只需关注业务逻辑，不需要手动操作DOM, 不需要关注数据状态的同步问题，复杂的数据状态维护完全由 MVVM 来统一管理。</li>
-</ol>
+        <p>上篇文章我们主要介绍了ES6的6个主要特性，本文将继续学习第二部分的两个特性Promise和模块导入导出，并且在最后还给大家介绍如何使用Babel工具将ES6代码转换成ES5格式代码。</p>
 <a id="more"></a>
-<h2 id="2-mvvm和mvc区别？"><a href="#2-mvvm和mvc区别？" class="headerlink" title="2 mvvm和mvc区别？"></a>2 mvvm和mvc区别？</h2><p>mvc和mvvm其实区别并不大。都是一种设计思想。主要就是mvc中Controller演变成mvvm中的viewModel。mvvm主要解决了mvc中大量的DOM 操作使页面渲染性能降低，加载速度变慢，影响用户体验。和当 Model 频繁发生变化，开发者需要主动更新到View </p>
-<h2 id="3-vue的优点是什么？"><a href="#3-vue的优点是什么？" class="headerlink" title="3 vue的优点是什么？"></a>3 vue的优点是什么？</h2><ol>
-<li>低耦合。视图（View）可以独立于Model变化和修改，一个ViewModel可以绑定到不同的”View”上，当View变化的时候Model可以不变，当Model变化的时候View也可以不变。</li>
-<li>可重用性。你可以把一些视图逻辑放在一个ViewModel里面，让很多view重用这段视图逻辑。</li>
-<li>独立开发。开发人员可以专注于业务逻辑和数据的开发（ViewModel），设计人员可以专注于页面设计，使用Expression Blend可以很容易设计界面并生成xml代码。</li>
-<li>可测试。界面素来是比较难于测试的，而现在测试可以针对ViewModel来写。</li>
-</ol>
-<h2 id="4-请详细说下你对vue生命周期的理解？"><a href="#4-请详细说下你对vue生命周期的理解？" class="headerlink" title="4 请详细说下你对vue生命周期的理解？"></a>4 请详细说下你对vue生命周期的理解？</h2><ul>
-<li>创建前/后： 在beforeCreate阶段，vue实例的挂载元素el还没有。</li>
-<li>载入前/后：在beforeMount阶段，vue实例的$el和data都初始化了，但还是挂载之前为虚拟的dom节点，data.message还未替换。在mounted阶段，vue实例挂载完成，data.message成功渲染。</li>
-<li>更新前/后：当data变化时，会触发beforeUpdate和updated方法。</li>
-<li>销毁前/后：在执行destroy方法后，对data的改变不会再触发周期函数，说明此时vue实例已经解除了事件监听以及和dom的绑定，但是dom结构依然存在</li>
-</ul>
+<h3 id="7-Promise"><a href="#7-Promise" class="headerlink" title="7.Promise"></a>7.Promise</h3><p>Promise/A+规范, 规定Promise对象是一个有限状态机。它有三个状态：</p>
+<p>pending（执行中）<br>Resolved（已完成）<br>Rejected（已失败）</p>
+<p>其中pending为初始状态，Resolved和rejected为结束状态（表示promise的生命周期已结束）。<br>使用两个then是异步编程串行化，避免了恐怖的回调：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> wait1000 = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span>(<span class="params">resolve,reject</span>)</span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   setTimeout(resolve,<span class="number">1000</span>)</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">wait1000</span><br><span class="line">    .then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'hello'</span>); <span class="comment">//1秒后输出'hello'</span></span><br><span class="line">      <span class="keyword">return</span> wait1000;</span><br><span class="line">    &#125;)</span><br><span class="line">    .then(<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">      <span class="built_in">console</span>.log(<span class="string">'Fundebug'</span>); <span class="comment">//2秒后输出'Fundebug'</span></span><br><span class="line">    &#125;)</span><br></pre></td></tr></table></figure>
+<h3 id="8-模块化export和import"><a href="#8-模块化export和import" class="headerlink" title="8.模块化export和import"></a>8.模块化export和import</h3><p>ES6中使用export与import关键词实现模块化。</p>
+<p>export用于对外输出本模块变量的接口（一般一个文件可以作为一个模块）； import则用于在一个模块中加载另一个含有export接口的模块。</p>
+<p>导出模块文件app.js：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Human</span></span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(name) &#123;</span><br><span class="line">        <span class="keyword">this</span>.name = name;</span><br><span class="line">    &#125;</span><br><span class="line">    sleep() &#123;</span><br><span class="line">        <span class="built_in">console</span>.log(<span class="keyword">this</span>.name + <span class="string">" is sleeping"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">walk</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'i am walking'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">play</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'i am playing'</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">export</span> &#123; Human, walk &#125;</span><br></pre></td></tr></table></figure>
+<p>模块导出了两个对象：Human类和walk函数，能被其他文件使用。而play函数没有导出，为此模块私有，不能被其他文件使用。<br>然后再main.js导入app.js模块。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> &#123; Human, walk &#125; <span class="keyword">from</span> <span class="string">'app.js'</span>;</span><br></pre></td></tr></table></figure>
+<p>我们可以使用关键字default，可将对象标注为default对象导出。default关键字在每一个模块中只能使用一次。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">... <span class="comment">//类，函数等</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> App;</span><br></pre></td></tr></table></figure></p>
+<p>在main.js导入app.js模块</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> App <span class="keyword">from</span> <span class="string">'app.js'</span>;</span><br></pre></td></tr></table></figure>
+<h3 id="ES6转码器-Babel"><a href="#ES6转码器-Babel" class="headerlink" title="ES6转码器: Babel"></a>ES6转码器: Babel</h3><p>由于目前并不是所有的浏览器都能兼容ES6的全部特性，所以需要将ES6代码转为ES5代码，才可以在现有的环境中执行。而Babel是一个广泛使用的ES6转码器。</p>
+<p>首先，我告诉大家可以使用Babel在线转换 <a href="https://babeljs.io/repl/" target="_blank" rel="noopener">https://babeljs.io/repl/</a><br>其次，我们可以在本地环境中安装Babale命令行环境。<br>安装和使用babel：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//1.安装babel-cli（用于在终端使用babel）</span></span><br><span class="line">npm install -g babel-cli</span><br><span class="line"></span><br><span class="line"><span class="comment">//2.安装babel-preset-es2015插件</span></span><br><span class="line">npm install --save babel-preset-es2015</span><br><span class="line"></span><br><span class="line"><span class="comment">//3.在当前目录下建立文件.babelrc，接着在文件中写入：</span></span><br><span class="line">&#123;</span><br><span class="line">　<span class="string">"presets"</span>: [<span class="string">'es2015'</span>]</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">//4.命令行使用实例：将es6.js转换后输出到es5.js文件中</span></span><br><span class="line">babel es6.js -o es5.js</span><br></pre></td></tr></table></figure></p>
+<p>其实，我们基于一些前端框架的开发环境如Vue等，他们脚手架工具都带有类似babel的工具了，如果你用了vue这样的框架，只管写ES6代码，不用担心转换问题了。</p>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>目前ES2017（ES8）也出来了，天啦，ES6还没搞完呢，但是我们不难发现，ES7\ES8也好，他们都是在ES6标准的基础上再作文章，所以先老老实实学好ES6，掌握好ES6的语法特性。</p>
+<p>参考链接：</p>
+<p>ECMAScript 6 入门： <a href="http://es6.ruanyifeng.com/" target="_blank" rel="noopener">http://es6.ruanyifeng.com/</a></p>
+<p>babel官网：<a href="http://babeljs.io/" target="_blank" rel="noopener">http://babeljs.io/</a></p>
 
       
     </div>
@@ -440,12 +420,6 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/Vue/" rel="tag"># Vue</a>
-          
-        </div>
-      
 
       
       
@@ -455,8 +429,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/02/01/interview/" rel="next" title="面试集锦">
-                <i class="fa fa-chevron-left"></i> 面试集锦
+              <a href="/2018/01/16/post3/" rel="next" title="ES6核心（上）">
+                <i class="fa fa-chevron-left"></i> ES6核心（上）
               </a>
             
           </div>
@@ -465,8 +439,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/03/14/post1/" rel="prev" title="python3 入门 (一)">
-                python3 入门 (一) <i class="fa fa-chevron-right"></i>
+              <a href="/2018/02/01/poetry/" rel="prev" title="诗歌选集">
+                诗歌选集 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -643,7 +617,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-什么是mvvm"><span class="nav-number">1.</span> <span class="nav-text">1 什么是mvvm?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-mvvm和mvc区别？"><span class="nav-number">2.</span> <span class="nav-text">2 mvvm和mvc区别？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-vue的优点是什么？"><span class="nav-number">3.</span> <span class="nav-text">3 vue的优点是什么？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-请详细说下你对vue生命周期的理解？"><span class="nav-number">4.</span> <span class="nav-text">4 请详细说下你对vue生命周期的理解？</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#7-Promise"><span class="nav-number">1.</span> <span class="nav-text">7.Promise</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-模块化export和import"><span class="nav-number">2.</span> <span class="nav-text">8.模块化export和import</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#ES6转码器-Babel"><span class="nav-number">3.</span> <span class="nav-text">ES6转码器: Babel</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
             
 
           </div>
@@ -823,9 +797,9 @@
     
       <script type="text/javascript">
         var disqus_config = function () {
-          this.page.url = 'http://yoursite.com/2018/03/06/page/';
-          this.page.identifier = '2018/03/06/page/';
-          this.page.title = 'VUE常见面试题目';
+          this.page.url = 'http://yoursite.com/2018/01/17/post4/';
+          this.page.identifier = '2018/01/17/post4/';
+          this.page.title = 'ES6核心（下）';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://.disqus.com/embed.js';
